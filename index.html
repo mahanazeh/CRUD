@@ -1,0 +1,71 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+
+
+        <h1 class="text-center text-muted mb-4">Our Store</h1>
+
+
+        <div class="container">
+
+            <label class="text-muted fw-bold">Product Name</label>
+            <input id="pNId" class="form-control mb-3">
+
+            <label class="text-muted fw-bold">Product Price</label>
+            <input id="pPId" class="form-control mb-3">
+
+            <label class="text-muted fw-bold">Product Category</label>
+            <input id="pCId" class="form-control mb-3">
+
+            <label class="text-muted fw-bold">Product Description</label>
+            <textarea id="pDId" class="form-control mb-3"></textarea>
+
+
+            <button id="addBtn" onclick="addProduct()" class="btn btn-warning text-white">Add Product</button>
+            
+            <button onclick="saveChanges()" id="saveBtn" style="display: none;" class="btn btn-warning text-white">Save Changes</button>
+
+        </div>
+
+
+        <input onkeyup="searchProductName(this.value)" class="form-control w-50 mx-auto my-5" placeholder="Search Product">
+
+
+
+        <table class="table w-75 mx-auto">
+            <thead class="text-white bg-dark">
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th class="text-warning">Update</th>
+                <th class="text-danger">Delete</th>
+                
+            </thead>
+
+            <tbody id="tBody">
+
+                    
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+        
+
+
+
+        
+        <script src="js/mine.js"></script>
+        
+    </body>
+</html>
